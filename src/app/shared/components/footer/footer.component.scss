@@ -1,0 +1,41 @@
+@import '../../../../styles/variables';
+
+.footer {
+    .footer_top {
+        padding: 60px 0;
+        background-color: $dark1;
+        .menu_links ul {
+            @media(max-width: 992px){
+                text-align: center;
+            }
+        }
+        .menu_links ul li {
+            display: inline-block;
+            margin-right: 46px;
+            font-family: "Muli", sans-serif;
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 500;
+
+                &:hover {
+                    color: $contrast;
+                }
+            }
+        }
+    }
+
+    .footer_copyright{
+        padding: 30px 0;
+        background-color: $dark1;
+        border-top: 1px solid #ffffff60;
+
+        .copy_right{
+            font-size: 13px;
+            color: #C7C7C7;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+    }
+}

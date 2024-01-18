@@ -1,0 +1,31 @@
+<div class="portfolio_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center">
+                    <h3>Portfolios</h3>
+                    <h4>Some of my awesome <br>
+                            stuffs here</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio_image_area">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let item of portfolio" [class]="item.size">
+                <div class="single_Portfolio">
+                    <div class="portfolio_thumb">
+                        <img [src]="item.img" [alt]="item.title">
+                    </div>
+                    <div class="portfolio_hover">
+                        <div class="title">
+                            <h3>{{ item.title }}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+@import 'variables';
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Create your own map
+$custom-colors: (
+	"dark1": $dark1,
+    "dark2": $dark2,
+    "medium1": $medium1,
+    "medium2": $medium2,
+    "contrast": $contrast
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+hr {
+    border-color: $contrast;
+    opacity: 1;
+    border-width: 2px;
+}

@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'mixins';
+
+// import overrides
+@import "bootstrap-overrides";
+
+
+a:focus,
+.button:focus,button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus{
+	text-decoration: none;
+}
+a:focus,
+a:hover,
+li a:hover {
+	text-decoration: none;
+}
+a,
+button {
+	color: #1F1F1F;
+	outline: medium none;
+}
+h1,h2,h3,h4,h5{
+	font-family: $font1;
+	color: $darkblue2;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}

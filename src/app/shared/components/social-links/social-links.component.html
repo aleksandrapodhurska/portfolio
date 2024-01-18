@@ -1,0 +1,7 @@
+<ul [ngClass]="direction" class="social-links">
+    <li *ngFor="let link of socialLinks; index as i;">
+        <a href="{{link.href}}">
+            <fa-icon [icon]="link.icon"></fa-icon>
+        </a>
+    </li>
+</ul>

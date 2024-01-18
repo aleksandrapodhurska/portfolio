@@ -1,0 +1,25 @@
+<header>
+    <div id="sticky-header" [ngClass]="{'sticky': isSticky, 'header px-3 py-2': true}">
+        <div class="container-fluid">
+            <div  class="main-header-area d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="logo">
+                        <a href="index.html">
+                            <fa-icon [icon]="faCode" animation="spin"></fa-icon>
+                        </a>
+                    </div>
+                </div>
+                <ul id="navigation" class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 d-flex">
+                    <li><a class="active" href="index.html">home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="col-xl-3 col-lg-3 text-end d-none d-lg-block">
+                    <app-button-primary text="Contact Me" [clickFunction]="contactMe"></app-button-primary>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
